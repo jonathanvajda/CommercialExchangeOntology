@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.merrellvajda.org/ontologies/commerce/oce.owl"
+     xml:base="http://www.merrellvajda.org/ontologies/commerce/oce.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2019-01-30/d-acts.owl"/>
+        <dc:creator xml:lang="en">Eric Merrell &lt;ericmerr@buffalo.edu&gt;</dc:creator>
+        <dc:creator xml:lang="en">Jonathan Vajda &lt;jvajda@buffalo.edu&gt;</dc:creator>
+        <dc:date xml:lang="en">Last Revision: 2023-03-22</dc:date>
+        <dc:description xml:lang="en">A reference ontology for the commerce domain. Conformant with Basic Formal Ontology (BFO). Intended to be the top-level ontology for the commerce domain, to be imported by future ontologies for finance, retail, marketing, and economics domains.</dc:description>
+        <owl:versionInfo xml:lang="en">0.0.4</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000000 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
+        <obo:IAO_0000115 xml:lang="en">a social act in which an entity is exchanged for another entity and has output some new owner role</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda, Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">act of trading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000001 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000001">
+        <rdfs:subClassOf rdf:resource="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000000"/>
+        <obo:IAO_0000115 xml:lang="en">an act of trading which has process part some act of payment, the agent of which is a bearer of some new owner role</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda, Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">act of buying</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000002 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000002">
+        <rdfs:subClassOf rdf:resource="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000000"/>
+        <obo:IAO_0000115 xml:lang="en">an act of trading which has process part some act of payment, the agent of which is a bearer of some owner role that is thereby modified or revoked</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda, Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">act of selling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000003 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000003">
+        <rdfs:subClassOf rdf:resource="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000000"/>
+        <obo:IAO_0000115 xml:lang="en">an act of exchange of trading, in which a trade takes place without currency being used in an act of payment</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">This definition needs work since we need to express the notion without stipulating certain entities are not involved.</obo:IAO_0000232>
+        <dc:creator xml:lang="en">Eric Merrell, Jonathan Vajda</dc:creator>
+        <rdfs:label xml:lang="en">act of bartering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000004 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
+        <obo:IAO_0000115 xml:lang="en">a social act which has output some invoice document which prescribes some act of payment</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda, Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">act of invoicing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000005 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
+        <obo:IAO_0000115 xml:lang="en">a social act which has output some price quote document which specifies some act of exchange</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda, Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">act of price quoting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000006 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021022"/>
+        <obo:IAO_0000115 xml:lang="en">a role inhering in an agent which is realized when the bearer exercises control over some object</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Jonathan Vajda</obo:IAO_0000117>
+        <dc:creator xml:lang="en">Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">owner role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000007 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115 xml:lang="en">a document that stands for a monetary value</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Jonathan Vajda</obo:IAO_0000117>
+        <obo:IAO_0000232 xml:lang="en">JV: Definition needs work, but honestly let&apos;s keep it until we do the theoretical work. &apos;stands for&apos; can be replaced with something in BFO terms, either of &apos;is_about&apos; or &apos;prescribes&apos; or something else. The term &apos;monetary value&apos; isn&apos;t defined yet, so we need that defined first if we are going to use the term.</obo:IAO_0000232>
+        <dc:creator xml:lang="en">Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">monetary currency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000008 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000008">
+        <rdfs:subClassOf rdf:resource="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000007"/>
+        <obo:IAO_0000115 xml:lang="en">a currency that is represented by a material object</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Jonathan Vajda</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">cash</obo:IAO_0000118>
+        <obo:IAO_0000232 xml:lang="en">JV: Might not be necessary</obo:IAO_0000232>
+        <dc:creator xml:lang="en">Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">physical currency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000009 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000009">
+        <rdfs:subClassOf rdf:resource="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000007"/>
+        <obo:IAO_0000115 xml:lang="en">currency represented electronically</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">JV: Might not be necessary</obo:IAO_0000232>
+        <dc:creator xml:lang="en">Eric Merrell</dc:creator>
+        <rdfs:label xml:lang="en">electronic currency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000010 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115 xml:lang="en">a document about some planned process and which asserts some entity has been received</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda</dc:creator>
+        <rdfs:label xml:lang="en">receipt document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000011 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000011">
+        <rdfs:subClassOf rdf:resource="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000010"/>
+        <obo:IAO_0000115 xml:lang="en">a receipt document which asserts the output of some act of payment has been received</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda</dc:creator>
+        <rdfs:label xml:lang="en">document of payment confirmation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000012 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115 xml:lang="en">a document about some planned process and which has part some plan specification prescribing some act of payment</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda</dc:creator>
+        <rdfs:label xml:lang="en">invoice document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000013 -->
+
+    <owl:Class rdf:about="http://www.merrellvajda.org/ontologies/commerce/oce.owl/OCE_00000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115 xml:lang="en">a document which has part some plan specification for some planned process which is process part of some act of trading and prescribes some act of payment</obo:IAO_0000115>
+        <dc:creator xml:lang="en">Jonathan Vajda</dc:creator>
+        <rdfs:label xml:lang="en">price quote document</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
